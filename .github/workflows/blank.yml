@@ -1,0 +1,13 @@
+name: GitHub Actions Linter
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: chmod +x linter.sh
+      - name: List files in the repository
+        run: |
+         ./linter.sh
