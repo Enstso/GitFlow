@@ -1,48 +1,49 @@
 # Soutenance-git-esgi
 
-Ce projet à pour objectif de mettre en place un projet respectant le modèle de gestion de branche gitflow.
+This project aims to implement a project following the GitFlow branch management model.
 
-## Pour commencer
+## Getting Started
 
-Il est important de consulter le [code de conduite](.github/CODE_OF_CONDUCT.md), avant de communiquer avec les personnes du projet.
+It is important to review the [CODE_OF_CONDUCT](.github/CODE_OF_CONDUCT.md),  before communicating with the project team.
 
 
 ### Installation
 
-Sur votre machine local, vous faîtes la commande suivante:
+On your local machine, run the following command:
     
 ```bash
 git clone https://github.com/Enstso/soutenance-git-esgi.git
 ```
 
+You should now have a folder named soutenance-git-esgi, You can now navigate into this folder.
 
-Vous devriez avoir un dossier nommé soutenance-git-esgi, vous pouvez maintenant vous déplacer dans ce dossier.
+In the .github/hook/pre-commit folder, if it is not present, you need to take the script [linter.sh](./linter.sh) and place it in the .git/hooks folder under the name pre-commit.
 
-Dans le dossier .github/hook/pre-commit si il n'est pas présent, vous devez prendre le script [linter.sh](./linter.sh) et le mettre dans le dossier .git/hooks sous le nom pre-commit.
-
-le rendre éxécutable avec la commande suivante:
+Make it executable with the following command :
 
 ```bash 
 chmod +x .git/hooks/pre-commit
 ```
 
 
-Une git action a aussi été mise en place pour vérifier que le code respecte bien le linter grâce aux protections de branches, si le git action n'est pas valide il sera impossible de merger.
+A Git action has also been set up to ensure that the code adheres to the linter rules through branch protection. If the Git action fails, it will be impossible to merge.
 
-Vous pouvez aussi mettre en place un dossier local sur lequel push vos modification, un simple git push pushera sur le dépot distant et un autre local.
+You can also set up a local folder where you can push your changes. A simple git push will push to both the remote and another local repository.
 
-Dans un nouveau répertoire créer un dépot git avec la commande suivante:
+In a new directory, create a Git repository with the following command :
 
 ```bash
 git init --bare
 ```
 
-la manipulation sur le dépot local :
+For operations on the local repository :
     
 ```bash
 git remote add local chemin/vers/le/dépot
 ```
-Pour push sur les 2 repos il suffit de faire :
+
+To push to both repositories, simply run :
+
 ```bash
 git push --all
 ```
@@ -50,23 +51,17 @@ git push --all
 
 
 
-## Démarrage
+## Running the Project
 
-Cliquer sur le fichier index.html pour lancer le projet.
-
+Click on the index.html file to start the project.
 
 ## Contributing
 
-Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](.github/CONTRIBUTING.md) pour savoir comment le faire.
+If you would like to contribute, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file for more information on how to do so.
 
 ## Versions
 
-branche main :
+Main branch :
 
-**ancienne version stable du 29/10/23 :** 1.0 
-**Dernière version stable du 13/11/23 :** 2.0 
-
-## Auteurs
-
- [@Enstso](https://github.com/Enstso)
-
+**Old stable version from 29/10/23 :** 1.0 
+**Latest stable version from 13/11/23 :** 2.0 
