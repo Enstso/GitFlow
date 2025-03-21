@@ -1,4 +1,4 @@
-# Soutenance-git-esgi
+# GitFlow
 
 This project aims to implement a project following the GitFlow branch management model.
 
@@ -12,7 +12,7 @@ It is important to review the [CODE_OF_CONDUCT](.github/CODE_OF_CONDUCT.md),  be
 On your local machine, run the following command:
     
 ```bash
-git clone https://github.com/Enstso/soutenance-git-esgi.git
+git clone https://github.com/Enstso/GitFlow.git
 ```
 
 You should now have a folder named soutenance-git-esgi, You can now navigate into this folder.
